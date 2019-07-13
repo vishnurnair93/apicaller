@@ -1,6 +1,6 @@
 <?php
 
-require_once('vendor\autoload.php');
+require 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 use function GuzzleHttp\json_encode;
