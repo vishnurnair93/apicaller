@@ -32,7 +32,7 @@ class ApiCaller
 $api = new ApiCaller();
 
 $arr = array_keys((array) json_decode(file_get_contents('words.json')));
-for ($i=42; $i < count($arr); $i++) { 
+for ($i=60; $i < count($arr); $i++) { 
     $api->sendRequest($arr[$i],$i);
     sleep(4);
 }
