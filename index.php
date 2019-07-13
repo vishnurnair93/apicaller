@@ -1,6 +1,6 @@
 <?php
 
-require_once('C:\Users\vishn\Documents\laravel\apicaller\vendor\autoload.php');
+require_once('vendor\autoload.php');
 
 use GuzzleHttp\Client;
 use function GuzzleHttp\json_encode;
