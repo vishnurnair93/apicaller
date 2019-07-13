@@ -31,7 +31,10 @@ class ApiCaller
 
 $api = new ApiCaller();
 
-$arr = array_keys((array) json_decode(file_get_contents('words.json')));
+// $arr = array_keys((array) json_decode(file_get_contents('words.json')));
+$arr = ((array) json_decode(file_get_contents('cwords.json')));
+
+print_r($arr);
 for ($i=60; $i < count($arr); $i++) { 
     $api->sendRequest($arr[$i],$i);
     sleep(4);
