@@ -22,10 +22,9 @@ class ApiCaller
                     'query' => $query
                 ])
             ]);
-    
-            echo $i.PHP_EOL;
+            return;
         } catch (\Exception $ex) {
-            echo json_encode($ex);
+            return;
         }
     }
 }
