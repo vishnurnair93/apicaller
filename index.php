@@ -35,7 +35,7 @@ $api = new ApiCaller();
 $arr = ((array) json_decode(file_get_contents('cwords.json')));
 
 print_r($arr);
-for ($i=60; $i < count($arr); $i++) { 
+for ($i=0; $i < count($arr); $i++) { 
     $api->sendRequest($arr[$i],$i);
     sleep(4);
 }
