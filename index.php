@@ -33,7 +33,9 @@ $api = new ApiCaller();
 
 // $arr = array_keys((array) json_decode(file_get_contents('words.json')));
 $arr = ((array) json_decode(file_get_contents('cwords.json')));
-for ($i=0; $i < count($arr); $i++) { 
-    $api->sendRequest($arr[$i],$i);
+for ($i=0; $i < count($arr); $i++) {
+	$k = array_rand($arr);
+	$v = $arr[$k];
+    $api->sendRequest($v,$i);
     sleep(4);
 }
